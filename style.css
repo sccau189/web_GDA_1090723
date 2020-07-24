@@ -6,4 +6,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+#about a.block {
+  position: absolute;
+}
 /*# sourceMappingURL=style.css.map */
