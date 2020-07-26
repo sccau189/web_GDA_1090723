@@ -14,9 +14,9 @@
 
 <body>
   <!-- 容器 -->
-  <div id="container">
+  <div class="container">
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Ruff優格</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,14 +24,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="#">關於我們<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">最新消息</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">產品</a>
+            <a class="nav-link" href="#">產品展示</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">會員專區</a>
@@ -67,177 +67,192 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </div>
-  <!-- 關於我們  -->
-  <nav class="col-sm-12 col-md-6" id="about">
-    <h2>關於我們</h2>
-    <div id="about1">
-      <img src="./img/about1.jpg" alt="a1">
-      <a href="#" class="block" id="about2">
-        <img src="./img/about2.jpg" alt="a2">
-      </a>
-      <a href="#" class="block" id="about3">
-        <img src="./img/about3.jpg" alt="a3">
-      </a>
-    </div>
-  </nav>
-  <!-- 最新消息 Bootstrap-list group-->
-  <div id="news">
-    <div class="row">
-      <div class="col-4">
-        <div class="list-group" id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
-            href="#list-home" role="tab" aria-controls="home">最新消息</a>
-          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
-            href="#list-profile" role="tab" aria-controls="profile">振興卷優惠方案</a>
-          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
-            href="#list-messages" role="tab" aria-controls="messages">消費滿額送</a>
-          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-            href="#list-settings" role="tab" aria-controls="settings">當日優惠商品</a>
-        </div>
-      </div>
-      <div class="col-8">
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-            <section>
-              <span>新口味上市-繽紛清涼芒果優格</span>
-              <span>刺激味蕾，清爽不油膩。</span>
-            </section>
-          </div>
-          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-            <section>
-              <span>使用振興卷消費200可買220</span>
-              <span>使用振興卷消費500可買550</span>
-              <span>使用振興卷消費1000可買1100</span>
-            </section>
-          </div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-            <section>
-              <span>消費滿額送精美好禮，買禮盒送精美包裝袋</span>
-              <li>滿200送抵用卷50</li>
-              <li>滿500送抵用卷150</li>
-            </section>
-          </div>
-          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-            <section>
-              <h4>周一優惠商品</h4>
-              <p>
-                上班第一天，給你滿滿的元氣商品，加油打氣迎接新的挑戰。
-              </p>
-            </section>
-          </div>
-        </div>
+
+    <!-- 關於我們  -->
+    <div id="about">
+      <h1>關於我們</h1>
+      <div id="about1">
+        <img src="./img/about1.png" alt="a1">
+        <img src="./img/about2.png" alt="a2">
       </div>
     </div>
-  </div>
-  <!-- 產品介紹 -->
-  <h1>產品介紹</h1>
-  <!-- 手機:12 平板:6 -->
-  <div class="row" id="product">
-    <div class="col-sm-12 col-md-6">
-      <div class="card" style="width: 18rem;">
-        <img src="./img/pro1.jpg" class="card-img-top" alt="blueberry">
-        <div class="card-body">
-          <p class="card-text">
-            酸酸甜甜，彷彿春天的感覺，七大功效:降脂、抗老、改善視力....，絕對是女性第一首選。
-          </p>
-          <li>價格:80元 up</li>
-        </div>
+    <!-- 最新消息 Bootstrap-list group-->
+    <div id="news">
+      <div>
+        <h1></h1>
       </div>
-    </div>
-    <div class="col-sm-12 col-md-6">
-      <div class="card" style="width: 18rem;">
-        <img src="./img/pro2.jpg" class="card-img-top" alt="fruit">
-        <div class="card-body">
-          <p class="card-text">
-            夏天清涼，水果必備，保證開胃，天氣炎熱，跑外務需要的精神來源就選它準沒錯。
-          </p>
-          <li>價格:85元 up</li>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-12 col-md-6">
-      <div class="card" style="width: 18rem;">
-        <img src="./img/pro3.jpg" class="card-img-top" alt="cereal">
-        <div class="card-body">
-          <p class="card-text">
-            健康飽足，無負擔，最適合想吃飽又不想胖的人來一杯吧~
-          </p>
-          <li>價格:80元 up</li>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-12 col-md-6">
-      <div class="card" style="width: 18rem;">
-        <img src="./img/pro4.jpg" class="card-img-top" alt="only">
-        <div class="card-body">
-          <p class="card-text">
-            打造專屬你的獨一無二，客製化訂做，加入你的喜好，成為專屬於你的優格。
-          </p>
-          <li>價格:110元 up</li>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- 會員專區 -->
-  <h1>會員專區</h1>
-  <!-- 使用者登入畫面  https://www.itread01.com/content/1547204050.html-->
-  <div class="row" id="member">
-    <div class="col-sm-12 col-md-6">
-      <h3 class="page-header col-md-offset-2" id="name">會員登入</h3>
-      <form role="form">
-        <div class="form-group">
-          <label for="inputEmail3" class="col-sm-12 control-label">郵箱</label>
-          <div>
-            <input type="email" id="inputEmail3" placeholder="Email">
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+              href="#list-home" role="tab" aria-controls="home">最新消息</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+              href="#list-profile" role="tab" aria-controls="profile">振興卷優惠方案</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+              href="#list-messages" role="tab" aria-controls="messages">消費滿額送</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+              href="#list-settings" role="tab" aria-controls="settings">當日優惠商品</a>
           </div>
         </div>
-        <div class="form-group">
-          <label for="inputPassword3" class="col-sm-12 control-label">密碼</label>
-          <div>
-            <input type="password" id="inputPassword3" placeholder="Password">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-12 col-md-6">
-            <div>
-              <label>
-                <input type="checkbox">記住我
-              </label>
-              <button class="btn btn-default btn-link">註冊</button>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <section>
+                <h4>新口味上市-繽紛清涼芒果優格</h4>
+                <img src="./img/mango.jpg" alt="">
+                <span>刺激味蕾，清爽不油膩。</span>
+              </section>
+            </div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+              <section>
+                <h4>振興卷使用方法</h4>
+                <li>使用振興卷消費200可買220</li>
+                <li>使用振興卷消費500可買550</li>
+              </section>
+            </div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+              <section>
+                <h4>消費滿額送精美好禮</h4>
+                <li>滿200送抵用卷50</li>
+                <li>滿500送抵用卷150</li>
+              </section>
+            </div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+              <section>
+                <h4>周一優惠商品</h4>
+                <img src="./img/top.jpg" alt="">
+                <p>
+                  上班第一天，給你滿滿的元氣商品，加油打氣迎接新的挑戰。
+                </p>
+              </section>
             </div>
           </div>
         </div>
-        <div class="form-group">
-          <div class="col-sm-12 col-md-6">
-            <button type="submit" class="btn btn-primary btn-block">登入</button>
+      </div>
+    </div>
+    <!-- 產品介紹 -->
+    <h1 id="pro1">產品介紹</h1>
+    <!-- 手機:12 平板:6 -->
+    <div class="row" id="product">
+      <div class="col-12 col-md-6">
+        <div class="card">
+          <img src="./img/pro1.jpg" class="card-img-top" alt="blueberry">
+          <div class="card-body">
+            <p class="card-text">
+              酸酸甜甜，彷彿春天的感覺，七大功效:降脂、抗老、改善視力....，絕對是女性第一首選。
+            </p>
+            <li>價格:80元 up</li>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card">
+          <img src="./img/pro2.jpg" class="card-img-top" alt="fruit">
+          <div class="card-body">
+            <p class="card-text">
+              夏天清涼，水果必備，保證開胃，天氣炎熱，跑外務需要的精神來源就選它準沒錯。
+            </p>
+            <li>價格:85元 up</li>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card">
+          <img src="./img/pro3.jpg" class="card-img-top" alt="cereal">
+          <div class="card-body">
+            <p class="card-text">
+              健康飽足，無負擔，最適合想吃飽又不想胖的人來一杯吧~
+            </p>
+            <li>價格:80元 up</li>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card">
+          <img src="./img/pro4.jpg" class="card-img-top" alt="only">
+          <div class="card-body">
+            <p class="card-text">
+              打造專屬你的獨一無二，客製化訂做，加入你的喜好，成為專屬於你的優格。
+            </p>
+            <li>價格:110元 up</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 會員專區 -->
+    <h1>會員專區</h1>
+    <div id="haha">
+      <form method="post">
+        <label for="name">姓名</label>
+        <input type="text" name="name" id="name" required placeholder=請輸入您的姓名>
+        <label for="email">信箱</label>
+        <input type="email" name="email" id="email" required placeholder=請輸入您的信箱>
+        <label for="password">密碼</label>
+        <input type="password" name="password" id="password" required placeholder=請輸入您的密碼>
+        <input type="checkbox" name="agree" id="agree" required>
+        <label for="agree">是否同意本平台條約</label>
+        <div id="button">
+          <input type="submit" value="送出">
+        </div>
+      </form>
+    </div>
+
+    <!-- 使用者登入畫面  https://www.itread01.com/content/1547204050.html-->
+
+    <!-- 加盟資訊 -->
+    <h1>加盟資訊</h1>
+    <div id="join">
+      <div id="text">
+        <img src="./img/ruffyogurtlogo.png" alt="">
+        <p>(04)2666-6699</p>
+        <p>yogurt66@gmail.com</p>
+        <p>台中市某區某路69號</p>
+      </div>
+    </div>
+
+    <!-- 聯絡我們 -->
+      <form>
+        <h1>聯絡我們</h1>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">姓名</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">信箱</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputPassword3">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-2">請輸入您的建議</div>
+          <div class="col-sm-10">
+            <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">送出</button>
           </div>
         </div>
       </form>
     </div>
   </div>
-  <!-- 加盟資訊 -->
-  <!-- 背景輪播圖 -->
-  <!-- 中間放logo下面文字打join us -->
-  
-  <!-- 背景輪播圖 -->
-  <!-- 聯絡我們 -->
 
 
-
-
-    <!--  Bootstrap CDN  -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"></script>
-    <!-- JS -->
-    <script src="./main.js"></script>
+  <!--  Bootstrap CDN  -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="./main.js"></script>
 </body>
 
 </html>
