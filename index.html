@@ -181,28 +181,34 @@
     </div>
     <!-- 會員專區 -->
     <h1>會員專區</h1>
-    <div id="haha">
-      <form method="post">
-        <label for="name">姓名</label>
-        <input type="text" name="name" id="name" required placeholder=請輸入您的姓名>
-        <label for="email">信箱</label>
-        <input type="email" name="email" id="email" required placeholder=請輸入您的信箱>
-        <label for="password">密碼</label>
-        <input type="password" name="password" id="password" required placeholder=請輸入您的密碼>
-        <input type="checkbox" name="agree" id="agree" required>
-        <label for="agree">是否同意本平台條約</label>
-        <div id="button">
-          <input type="submit" value="送出">
-        </div>
-      </form>
-    </div>
+    <section class="signin">
+      <div class="container">
+        <div class="row">
+          <form class="col-12 col-md-6">
+            <div class="signin-box">
+              <p class="text-left">歡迎回來，登入後即可快速結帳</p>
+              <p id="Label_Message" class="error in" style="display:none;">*帳號或密碼錯誤，或您尚未加入會員</p>
+              <input id="Text_Email" type="email" placeholder="信箱登入">
+              <input id="Text_Password" type="password" placeholder="密碼">
+              <a class="forgot" href="">忘記密碼</a>
+              <p class="no-ac">
+                沒有帳號嗎?立刻
+                <a href="">註冊</a>
+                將可享受輕鬆快速的線上購物體驗
+              </p>
+              <a class="btn-more" onclick="Login();" href="">登入</a>
+            </div>
 
-    <!-- 使用者登入畫面  https://www.itread01.com/content/1547204050.html-->
+          </form>
+
+        </div>
+      </div>
+    </section>
 
     <!-- 加盟資訊 -->
     <h1>加盟資訊</h1>
     <div id="join">
-      <div id="text">
+      <div id="text" class="col-12 col-md-6">
         <img src="./img/ruffyogurtlogo.png" alt="">
         <p>(04)2666-6699</p>
         <p>yogurt66@gmail.com</p>
@@ -211,48 +217,44 @@
     </div>
 
     <!-- 聯絡我們 -->
-      <form>
-        <h1>聯絡我門</h1>
-        <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">姓名</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEmail3">
-          </div>
+    <section id="call123">
+      <div class="row">
+        <div id="col-12 col-md-6">
+          <h1>聯絡我們</h1>
+          <p>
+            若您在使用我們產品上有任何寶貴的意見，歡迎使用以下留言給予我們建議，
+            或是有任何資訊想了解，可以使用電郵或打客服專線與我們聯繫，您的寶貴意見我們必將虛心接受並改進，由衷期盼您能夠在使用我們的產品，感謝您的指教。
+            <br>
+            Ruffu優格 敬上
+            <br>
+            電郵 ； yougurt66@gmail.com
+            <br>
+            客服專線:0800-666-999
+          </p>
+          <form id="callme">
+            <div>
+              <input type="text" placeholder="請輸入您的名字">
+              <input type="text" placeholder="請輸入您的信箱">
+              <textarea></textarea>
+            </div>
+            <input type="submit" value="送出">
+          </form>
         </div>
-        <div class="form-group row">
-          <label for="inputPassword3" class="col-sm-2 col-form-label">信箱</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputPassword3">
-          </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-sm-2">請輸入您的建議</div>
-          <div class="col-sm-10">
-            <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
-          </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">送出</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
+      </div>
+    </section>
 
-
-  <!--  Bootstrap CDN  -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
-  <!-- JS -->
-  <script src="./main.js"></script>
+    <!--  Bootstrap CDN  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="./main.js"></script>
 </body>
 
 </html>

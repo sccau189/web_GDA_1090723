@@ -74,7 +74,6 @@ h1{
 }
 
 
-
 #product{
     background-image: url(./img/product-back.png);
     .card{
@@ -85,6 +84,71 @@ h1{
         background-color: #ffffff11;
     }
 }
+
+// 會員專區
+section{
+    .title{
+        text-align: center;
+    }
+
+    .text-left{
+        text-align: center;
+        p{
+            margin: 0 , 0 , 10px;
+        }
+    }
+
+    form{
+        width: 500px;
+        margin: 0 auto;
+        padding: 30px 0;
+
+        .login-container .text-left, input {
+            width: 100%;
+            color: #595757;
+            padding: 14px 15px;
+            font-size: 16px;
+            margin: 10px 0;
+            height: 50px;
+            border-radius: 0;
+            background: #fff;
+        }
+    
+        .btn-more{
+            background: #071B43;
+            border: 1px solid #071B43;
+            margin: 15px auto;
+            width: 200px;
+            max-width: 200px;
+            font-size: 16px;
+            cursor: pointer;
+            line-height: 16px;
+            border-radius: 1.5em;
+            display: block;
+            text-align: center;
+            padding: .5em;
+            color: #E4D0A3;
+            text-decoration: none;
+        }
+        .btn-more:hover{
+            background: #E3DDD2;
+            border: 1px solid #E3DDD2;
+            margin: 15px auto;
+            width: 200px;
+            max-width: 200px;
+            font-size: 16px;
+            cursor: pointer;
+            line-height: 16px;
+            border-radius: 1.5em;
+            display: block;
+            text-align: center;
+            padding: .5em;
+            color: #071B43;
+            text-decoration: none;
+        }
+    }
+}
+
 #join{
     background-image: url(./img/join.jpg);
     background-position: 50% 50%;
@@ -109,10 +173,69 @@ h1{
         }
     }
 }
-
-// 會員專區
-
 // 聯絡我們
+#call123{
+    background-image: url(./img/callme.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    h1{
+        margin-top: 10px;
+    }
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.5;
+    p{
+        margin-top: 10px;
+    }  
+}
+#callme input[type="submit"] {
+    background: #071B43;
+    border: 1px solid #071B43;
+    margin: 15px auto;
+    width: 200px;
+    max-width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 16px;
+    border-radius: 1.5em;
+    display: block;
+    text-align: center;
+    padding: .5em;
+    color: #E4D0A3;
+    text-decoration: none;
+}
 
-
-   
+#callme input[type="submit"]:hover{
+    background: #E3DDD2;
+    border: 1px solid #E3DDD2;
+    margin: 15px auto;
+    width: 200px;
+    max-width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 16px;
+    border-radius: 1.5em;
+    display: block;
+    text-align: center;
+    padding: .5em;
+    color: #071B43;
+    text-decoration: none;  
+}
+// https://www.itread01.com/content/1541859063.html
+.row::before{
+        background-image: url(./img/callme.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        z-index: -2;
+        -webkit-filter: blur(3px);
+        filter: blur(3px); 
+    }
