@@ -239,3 +239,13 @@ section{
         -webkit-filter: blur(3px);
         filter: blur(3px); 
     }
+#back-to-top {
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    }
+

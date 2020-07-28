@@ -14,7 +14,7 @@
 
 <body>
   <!-- 容器 -->
-  <div class="container">
+  <div id="top" class="container">
     <!-- 導覽列 -->
     <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Ruff優格</a>
@@ -25,22 +25,22 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item ">
-            <a class="nav-link" href="#">關於我們<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#" data-gte-target ="about"  data-gte-offset ="100">關於我們<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">最新消息</a>
+            <a class="nav-link" href="#" data-gte-target ="news"  data-gte-offset ="100">最新消息</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">產品展示</a>
+            <a class="nav-link" href="#" data-gte-target ="pro1"  data-gte-offset ="100">產品展示</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">會員專區</a>
+            <a class="nav-link" href="#" data-gte-target ="member"  data-gte-offset ="100">會員專區</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">加盟資訊</a>
+            <a class="nav-link" href="#" data-gte-target ="joinus"  data-gte-offset ="100">加盟資訊</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">聯絡我們</a>
+            <a class="nav-link" href="#" data-gte-target ="call123"  data-gte-offset ="100">聯絡我們</a>
           </li>
         </ul>
       </div>
@@ -180,7 +180,7 @@
       </div>
     </div>
     <!-- 會員專區 -->
-    <h1>會員專區</h1>
+    <h1 id="member">會員專區</h1>
     <section class="signin">
       <div class="container">
         <div class="row">
@@ -206,13 +206,15 @@
     </section>
 
     <!-- 加盟資訊 -->
-    <h1>加盟資訊</h1>
-    <div id="join">
-      <div id="text" class="col-12 col-md-6">
-        <img src="./img/ruffyogurtlogo.png" alt="">
-        <p>(04)2666-6699</p>
-        <p>yogurt66@gmail.com</p>
-        <p>台中市某區某路69號</p>
+    <div class="container">
+      <h1 id="joinus">加盟資訊</h1>
+      <div class="row" id="join">
+        <div id="text" class="col-12 col-md-6">
+          <img src="./img/ruffyogurtlogo.png" alt="">
+          <p>(04)2666-6699</p>
+          <p>yogurt66@gmail.com</p>
+          <p>台中市某區某路69號</p>
+        </div>
       </div>
     </div>
 
@@ -242,7 +244,15 @@
         </div>
       </div>
     </section>
+    
+    <!-- 頁尾資訊 -->
+    <footer id="information">
 
+    </footer>
+    <!-- 返回首頁 -->
+    <div id="back-to-top" data-gte-target="top" data-gte-offset="100">
+      <img src="./img/back-to-top.png" alt="">
+    </div>
     <!--  Bootstrap CDN  -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -253,6 +263,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"></script>
+    <!-- 捲動CDN -->
+    <script scr="https://sccau189.github.io/Web_HC_GoToElment-1090705/GoToElement.js"></script>
     <!-- JS -->
     <script src="./main.js"></script>
 </body>
