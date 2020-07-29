@@ -72,68 +72,69 @@
     </div>
 
     <!-- 關於我們  -->
-    <div class="container"id="about">
-        <h1>關於我們</h1>
-        <div id="about1">
-            <!-- 舊版 -->
-            <!-- <img src="./img/about1.png" alt="a1"> -->
-            <!-- <img src="./img/about2.png" alt="a2"> -->
+    <div class="container" id="about">
+      <h1>關於我們</h1>
+      <div id="about1">
+        <!-- 舊版 -->
+        <!-- <img src="./img/about1.png" alt="a1"> -->
+        <!-- <img src="./img/about2.png" alt="a2"> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 最新消息 Bootstrap-list group-->
+  <div class="container" id="news">
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+            href="#list-home" role="tab" aria-controls="home">最新消息</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+            href="#list-profile" role="tab" aria-controls="profile">振興卷優惠方案</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+            href="#list-messages" role="tab" aria-controls="messages">消費滿額送</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+            href="#list-settings" role="tab" aria-controls="settings">當日優惠商品</a>
         </div>
       </div>
-      </div>
-     
-    <!-- 最新消息 Bootstrap-list group-->
-    <div id="news">
-      <div class="row">
-        <div class="col-4">
-          <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
-              href="#list-home" role="tab" aria-controls="home">最新消息</a>
-            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
-              href="#list-profile" role="tab" aria-controls="profile">振興卷優惠方案</a>
-            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
-              href="#list-messages" role="tab" aria-controls="messages">消費滿額送</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-              href="#list-settings" role="tab" aria-controls="settings">當日優惠商品</a>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <section>
+              <h4>新口味上市-繽紛清涼芒果優格</h4>
+              <img src="./img/mango.jpg" alt="">
+              <span>刺激味蕾，清爽不油膩。</span>
+            </section>
           </div>
-        </div>
-        <div class="col-8">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-              <section>
-                <h4>新口味上市-繽紛清涼芒果優格</h4>
-                <img src="./img/mango.jpg" alt="">
-                <span>刺激味蕾，清爽不油膩。</span>
-              </section>
-            </div>
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-              <section>
-                <h4>振興卷使用方法</h4>
-                <li>使用振興卷消費200可買220</li>
-                <li>使用振興卷消費500可買550</li>
-              </section>
-            </div>
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-              <section>
-                <h4>消費滿額送精美好禮</h4>
-                <li>滿200送抵用卷50</li>
-                <li>滿500送抵用卷150</li>
-              </section>
-            </div>
-            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-              <section>
-                <h4>周一優惠商品</h4>
-                <img src="./img/top.jpg" alt="">
-                <p>
-                  上班第一天，給你滿滿的元氣商品，加油打氣迎接新的挑戰。
-                </p>
-              </section>
-            </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <section>
+              <h4>振興卷使用方法</h4>
+              <li>使用振興卷消費200可買220</li>
+              <li>使用振興卷消費500可買550</li>
+            </section>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <section>
+              <h4>消費滿額送精美好禮</h4>
+              <li>滿200送抵用卷50</li>
+              <li>滿500送抵用卷150</li>
+            </section>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            <section>
+              <h4>周一優惠商品</h4>
+              <img src="./img/top.jpg" alt="">
+              <p>
+                上班第一天，給你滿滿的元氣商品，加油打氣迎接新的挑戰。
+              </p>
+            </section>
           </div>
         </div>
       </div>
     </div>
-    <!-- 產品介紹 -->
+  </div>
+  <!-- 產品介紹 -->
+  <div class="container">
     <h1 id="pro1">產品介紹</h1>
     <!-- 手機:12 平板:6 -->
     <div class="row" id="product">
@@ -182,79 +183,81 @@
         </div>
       </div>
     </div>
-    <!-- 會員專區 -->
-    <h1 id="member">會員專區</h1>
-    <section class="signin">
-      <div class="container">
-        <div class="row">
-          <form class="col-12 col-md-6">
-            <div class="signin-box">
-              <p class="text-left">歡迎回來，登入後即可快速結帳</p>
-              <p id="Label_Message" class="error in" style="display:none;">*帳號或密碼錯誤，或您尚未加入會員</p>
-              <input id="Text_Email" type="email" placeholder="信箱登入">
-              <input id="Text_Password" type="password" placeholder="密碼">
-              <a class="forgot" href="">忘記密碼</a>
-              <p class="no-ac">
-                沒有帳號嗎?立刻
-                <a href="">註冊</a>
-                將可享受輕鬆快速的線上購物體驗
-              </p>
-              <a class="btn-more" onclick="Login();" href="">登入</a>
-            </div>
+  </div>
 
-          </form>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 加盟資訊 -->
+  <!-- 會員專區 -->
+  <h1 id="member">會員專區</h1>
+  <section class="signin">
     <div class="container">
-      <h1 id="joinus">加盟資訊</h1>
-      <div class="row" id="join">
-        <div id="text" class="col-12 col-md-6">
-          <img src="./img/ruffyogurtlogo.png" alt="">
-          <p>(04)2666-6699</p>
-          <p>yogurt66@gmail.com</p>
-          <p>台中市某區某路69號</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 聯絡我們 -->
-    <section id="call123" class="container">
       <div class="row">
-        <div id="col-12 col-md-6">
-          <h1>聯絡我們</h1>
-          <p>
-            若您在使用我們產品上有任何寶貴的意見，歡迎使用以下留言給予我們建議，
-            或是有任何資訊想了解，可以使用電郵或打客服專線與我們聯繫，您的寶貴意見我們必將虛心接受並改進，由衷期盼您能夠在使用我們的產品，感謝您的指教。
-            <br>
-            Ruffu優格 敬上
-            <br>
-            電郵 ； yougurt66@gmail.com
-            <br>
-            客服專線:0800-666-999
-          </p>
-          <form class="col-12 col-md-6">
-            <div class="signin-box">
-              <input id="Text_Name" type="name" placeholder="請輸入您的名字">
-              <input id="Text_Email" type="email" placeholder="請輸入您的信箱">
-              <textarea></textarea>
-              <a class="btn-more" onclick="Login();" href="">送出</a>
-            </div>
+        <form class="col-12 col-md-6">
+          <div class="signin-box">
+            <p class="text-left">歡迎回來，登入後即可快速結帳</p>
+            <p id="Label_Message" class="error in" style="display:none;">*帳號或密碼錯誤，或您尚未加入會員</p>
+            <input id="Text_Email" type="email" placeholder="信箱登入">
+            <input id="Text_Password" type="password" placeholder="密碼">
+            <a class="forgot" href="">忘記密碼</a>
+            <p class="no-ac">
+              沒有帳號嗎?立刻
+              <a href="">註冊</a>
+              將可享受輕鬆快速的線上購物體驗
+            </p>
+            <a class="btn-more" onclick="Login();" href="">登入</a>
+          </div>
 
-          </form>
-        </div>
+        </form>
+
       </div>
-    </section>
-
-    <!-- 頁尾資訊 -->
-    <div class="row">
-      <footer id="information">
-        &copy; 2019-2020 Ruffu優格 All right reserved
-      </footer>
     </div>
+  </section>
+
+  <!-- 加盟資訊 -->
+  <div class="container">
+    <h1 id="joinus">加盟資訊</h1>
+    <div class="row" id="join">
+      <div id="text" class="col-12 col-md-6">
+        <img src="./img/ruffyogurtlogo.png" alt="">
+        <p>(04)2666-6699</p>
+        <p>yogurt66@gmail.com</p>
+        <p>台中市某區某路69號</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 聯絡我們 -->
+  <section id="call123" class="container">
+    <div class="row">
+      <div id="col-12 col-md-6">
+        <h1>聯絡我們</h1>
+        <p>
+          若您在使用我們產品上有任何寶貴的意見，歡迎使用以下留言給予我們建議，
+          或是有任何資訊想了解，可以使用電郵或打客服專線與我們聯繫，您的寶貴意見我們必將虛心接受並改進，由衷期盼您能夠在使用我們的產品，感謝您的指教。
+          <br>
+          Ruffu優格 敬上
+          <br>
+          電郵 ； yougurt66@gmail.com
+          <br>
+          客服專線:0800-666-999
+        </p>
+        <form class="col-12 col-md-6">
+          <div class="signin-box">
+            <input id="Text_Name" type="name" placeholder="請輸入您的名字">
+            <input id="Text_Email" type="email" placeholder="請輸入您的信箱">
+            <textarea></textarea>
+            <a class="btn-more" onclick="Login();" href="">送出</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾資訊 -->
+  <div class="row">
+    <footer id="information">
+      &copy; 2019-2020 Ruffu優格 All right reserved
+    </footer>
+  </div>
   </div>
   <!-- 返回首頁 -->
   <div id="back-to-top" data-gte-target="top" data-gte-offset="100">
