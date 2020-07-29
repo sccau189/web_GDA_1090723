@@ -63,6 +63,10 @@ h1 {
   display: grid;
 }
 
+#news {
+  height: 700px;
+}
+
 #news h4 {
   font-size: 25px;
   text-align: center;
