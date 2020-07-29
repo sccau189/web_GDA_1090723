@@ -32,6 +32,7 @@ h1 {
 #about1 {
   height: 800px;
   background: url(./img/about1.png);
+  background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
   transition: 1s;
@@ -39,6 +40,7 @@ h1 {
 
 #about1:hover {
   background: url(./img/about2.png);
+  background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
   transition: 1s;

@@ -52,11 +52,13 @@ h1{
 #about1 {
     height: 800px;
     background: url(./img/about1.png);
+    background-position: center;
     background-size: cover;
     transition: 1s;
 
     &:hover {
         background: url(./img/about2.png);
+        background-position: center;
         background-size: cover;
         transition: 1s;
     }
