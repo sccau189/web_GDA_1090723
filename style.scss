@@ -6,6 +6,7 @@
     width: 100%;
     
 }
+
 h1{
     display: grid;
     font-size: 40px;
@@ -20,24 +21,37 @@ h1{
     z-index: 3;
 }
 // 關於我們滑入滑出特效
-#about {
-    h1{
-        padding-top: 20px;
-        padding-bottom: none;
-    }
-    #about1{
-        position: relative;
-        &:hover img:nth-child(1){ 
-            z-index: -1;
-        }
-        img{
-            &:nth-child(1){
-                position: absolute;
+// #about {
+//     h1{
+//         padding-top: 20px;
+//         padding-bottom: none;
+//     }
+//     #about1{
+//         position: relative;
+//         &:hover img:nth-child(1){ 
+//             z-index: -1;
+//         }
+//         img{
+//             &:nth-child(1){
+//                 position: absolute;
                 
-            }
-        }
+//             }
+//         }
+//     }
+// }
+
+// 改版
+#about1 {
+    height: 800px;
+    background: url(./img/about1.png);
+    background-size: cover;
+    transition: 1s;
+
+    &:hover {
+        background: url(./img/about2.png);
+        background-size: cover;
+        transition: 1s;
     }
-    
 }
 
 #carouselExampleFade {
