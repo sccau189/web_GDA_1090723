@@ -22,12 +22,13 @@ h1{
     width: 60px !important;
 }
 
-#menu{
-    position: sticky;
-    top: 0;
-    transform: translateY(0);
+/* 添加這個樣式 */
+.fixed-bar {
+    position: fixed !important;
+    width: 100%;
     z-index: 3;
-}
+    top: 0;
+  }
 // 關於我們滑入滑出特效
 // #about {
 //     h1{
@@ -223,7 +224,7 @@ section{
     align-items: center;
     
     .row {
-        background-image: url(./img/callme.png);
+        background-image: url(./img/callme-new.png);
         background-position: 50% 50%;
         background-size: cover;
         margin: 0;
