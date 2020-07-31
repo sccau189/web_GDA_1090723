@@ -27,10 +27,10 @@ h1{
     position: sticky !important;
     z-index: 3;
     top: 0;
-  }
-
-  > a {
-    margin: 0 !important;
+  
+    > a {
+        margin: 0 !important;
+    }
 }
   
 // 關於我們滑入滑出特效
@@ -311,7 +311,6 @@ footer{
     padding: 100px;
     text-align: center;
 }   
-
 
 @media (max-width: 575.98px) {
     #about1 {
